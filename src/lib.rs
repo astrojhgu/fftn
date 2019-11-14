@@ -46,8 +46,7 @@ fn _fftn<T: FFTnum+From<u32>, D: Dimension>(input: &mut ArrayViewMut<Complex<T>,
 
 fn _fftnd<T: FFTnum+From<u32>, D: Dimension>(input: &mut ArrayViewMut<Complex<T>, D>, output: &mut ArrayViewMut<Complex<T>, D>, axes: &[usize], inverse: bool) {
     let len = axes.len();
-    for i in 0..len {
-        let axis = axes[i];
+    for (i, &axis) in axes.iter().enumerate() {
         _fftn(input, output, axis, inverse);
         if i < len - 1 {
             let mut outrows = output.genrows_mut().into_iter();
