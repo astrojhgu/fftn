@@ -3,8 +3,8 @@ extern crate rustfft;
 extern crate ndarray;
 
 pub use rustfft::{FFTnum};
+pub use rustfft::num_complex::Complex;
 use rustfft::{FFTplanner};
-use rustfft::num_complex::Complex;
 use rustfft::num_traits::{Zero};
 use ndarray::{ArrayViewMut, ArrayViewMut2, Dimension};
 
