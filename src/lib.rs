@@ -13,7 +13,8 @@ pub fn fft2<T: FFTnum+From<u32>>(input: &mut ArrayViewMut2<Complex<T>>, output: 
     fftnd(input, output, &[0,1]);
 }
 
-pub fn ifft2<T:FFTnum+From<u32>>(input: &mut ArrayViewMut2<Complex<f64>>, output: &mut ArrayViewMut2<Complex<f64>>) {
+pub fn ifft2<T:FFTnum+From<u32>>(input: &mut ArrayViewMut2<Complex<T>>, output: &mut ArrayViewMut2<Complex<T>>) 
+{
     ifftnd(input, output, &[1,0]);
 }
 
