@@ -1,11 +1,9 @@
-[package]
-name = "fftn"
-version = "0.1.0"
-authors = ["Gu Junhua <jhgu@nao.cas.cn>"]
-edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-rustfft = "3.0.0"
-ndarray = "0.13.0"
+ndarray = '0.13.0'
+rustfft = '3.0.0'
+
+[package]
+authors = ['Gu Junhua <jhgu@nao.cas.cn>']
+edition = '2018'
+name = 'fftn'
+version = '0.1.0'
