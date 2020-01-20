@@ -1,6 +1,6 @@
 [dependencies]
 ndarray = '0.13.0'
-rustfft = '3.0.0'
+rustfft = '3.0.1'
 
 [package]
 authors = ['Gu Junhua <jhgu@nao.cas.cn>']
